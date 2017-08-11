@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/desired_league_bg"
+    tools:context="khentarjiel.cabural.com.example.khent.swooshapplication.LeagueSelectionMainActivity">
+
+    <ImageView
+        android:id="@+id/SwooshImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/swoosh_logo"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desired League:"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="72dp"
+        android:layout_below="@+id/SwooshImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp" />
+
+    <Button
+        android:id="@+id/Mens_btn"
+        android:alpha="0.7"
+        android:layout_width="354dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@drawable/my_button"
+        android:onClick="Buttons"
+        android:text="Mens"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="132dp"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp" />
+
+    <Button
+        android:id="@+id/Womens_button"
+
+        android:alpha="0.7"
+        android:layout_width="354dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@drawable/my_button"
+        android:onClick="Buttons"
+        android:text="Womens"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="201dp"
+        android:layout_below="@+id/Mens_btn"
+        android:layout_alignLeft="@+id/Mens_btn"
+        android:layout_alignStart="@+id/Mens_btn"
+        android:layout_marginTop="19dp" />
+
+    <Button
+        android:id="@+id/CoEd_button"
+        android:alpha="0.7"
+        android:layout_width="354dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@drawable/my_button"
+        android:onClick="Buttons"
+        android:text="Co-ed"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="271dp"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/Womens_button"
+        android:layout_alignLeft="@+id/Womens_button"
+        android:layout_alignStart="@+id/Womens_button" />
+
+    <TextView
+        android:id="@+id/I_am_a_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am a:"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="346dp"
+        android:layout_below="@+id/CoEd_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:id="@+id/BallerOrBeginTextView"
+        android:layout_width="308dp"
+        android:layout_height="57dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="378dp"
+        android:layout_below="@+id/I_am_a_textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/Next_button"
+        android:layout_width="354dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@drawable/my_button"
+        android:onClick="NeXt"
+        android:text="NEXT"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="445dp"
+        android:layout_below="@+id/BallerOrBeginTextView"
+        android:layout_alignLeft="@+id/CoEd_button"
+        android:layout_alignStart="@+id/CoEd_button"
+        android:layout_marginTop="17dp" />
+
+</RelativeLayout>

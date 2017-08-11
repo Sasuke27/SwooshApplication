@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/welcome_screen_bg"
+    tools:context="khentarjiel.cabural.com.example.khent.swooshapplication.SwooshApp_MainActivity">
+
+    <ImageView
+        android:id="@+id/SwooshImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/swoosh_logo"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO ALL IN "
+        android:textColor="@android:color/background_light"
+        android:textSize="60sp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="99dp"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/SwooshImageView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ON GOING ALL OUT"
+        android:textColor="@android:color/background_light"
+        android:textSize="33sp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="178dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find a team in your city &amp; dominate"
+        android:textColor="@android:color/background_light"
+        android:textSize="19sp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="244dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="the league"
+        android:textColor="@android:color/background_light"
+        android:textSize="19sp"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="267dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/GET_STARTED_btn"
+        android:layout_width="354dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:layout_weight="1"
+        android:alpha="0.7"
+        android:background="@drawable/my_button"
+        android:text="GET STARTED"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="445dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/beginner_baller_bg"
+    tools:context="khentarjiel.cabural.com.example.khent.swooshapplication.SkillScreenMainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/swoosh_logo"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am a:"
+        android:textColor="@android:color/background_light"
+        android:textSize="26sp"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="85dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+
+
+
+
+    <Button
+        android:id="@+id/Beginner_button"
+        android:alpha="0.8"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="-30sp"
+        android:onClick="buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_button"
+        android:text="Beginner"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="24dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="150dp"
+        android:layout_marginTop="78dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/textView4"
+        android:layout_toStartOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/Baller_button"
+        android:alpha="0.8"
+        android:onClick="buttons"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="-30sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_button"
+        android:text="Baller"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="24dp"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="150dp"
+        android:layout_alignBaseline="@+id/Beginner_button"
+        android:layout_alignBottom="@+id/Beginner_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+
+
+
+
+    <Button
+        android:id="@+id/Finish_button"
+        android:onClick="finish"
+        android:layout_width="354dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@drawable/my_button"
+        android:text="FINISH"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="445dp"
+        android:layout_marginBottom="17dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/Beginner_button"
+        android:layout_alignStart="@+id/Beginner_button"
+        android:layout_alignRight="@+id/Baller_button"
+        android:layout_alignEnd="@+id/Baller_button" />
+
+
+
+</RelativeLayout>
